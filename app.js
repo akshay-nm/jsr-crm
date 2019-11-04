@@ -39,7 +39,7 @@ app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
 app.use(requireHTTPS)
-app.use(helmet)
+app.use(helmet())
 app.use(bodyParser.json())
 app.use(authenticate)
 app.use(authorize)
